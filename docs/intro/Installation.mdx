@@ -1,0 +1,119 @@
+---
+title: ⚙️ Installation
+description: Create a doc page with rich content AppFlow Installation.
+sidebar_position: 3
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# AppFlow ⚙️ Installation
+
+Welcome to the **`AppFlow Installation Guide`**! Follow these steps to set up the front-end and back-end of the application. Whether you're using `CLI` or `Docker`, we've got you covered.
+
+---
+
+
+
+<Tabs>
+  <TabItem value="front" label="Front-end Installation" default>
+   ## Front-end Installation
+
+### Clone the Repository (CLI)
+
+```bash 
+git clone https://github.com/your-org/frontend-repo.git
+
+```
+
+
+### Install dependencies
+
+```bash 
+npm install
+```
+:::tip
+
+Node.js Setup: Ensure you have Node.js and npm installed before running the commands. Use the latest LTS version of Node.js for compatibility.
+ 
+  :::
+
+### Run the development server
+```bash 
+npm run dev
+```
+
+
+  </TabItem>
+
+
+  <TabItem value="back" label="Back-end Installation">
+## Back-end Installation
+### Clone the Repository (Docker)
+
+`1.Ensure Docker is installed on your system.`
+
+`2.Run the following commands:`
+
+### Clone the back-end repository
+
+```bash
+git clone https://github.com/your-org/backend-repo.git
+``` 
+
+
+### Build the back-end Docker image
+```bash
+docker build -t appflow-backend .
+```
+### Run the back-end container
+```bash
+docker run -p 4000:4000 appflow-backend
+```
+
+
+
+
+:::tip
+Database Setup: Make sure NocoDB  is running before starting the back-end server. Configure the database connection in the .env file.
+ :::
+
+
+:::info
+
+Back-end Access The back-end will be accessible at http://localhost:4000 (or the port you've configured). 
+
+ :::
+  </TabItem>
+</Tabs>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+# Installation Guide 
+ 
+:::warning
+
+Here is your `installation` guide
+
+:::
+
+
+import CardContainer from '@site/src/components/CardContainer';
+
+<CardContainer />
+
+
+
+
+
+
+

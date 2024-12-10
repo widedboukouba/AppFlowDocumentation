@@ -1,0 +1,309 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+html {
+  background-color: var(--ifm-color-primary-lite);
+  /* background-image: url("./backgroundappflow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover !important; */
+}
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #7819cb; /* Main purple color */
+  --ifm-color-primary-dark: #6c16b8; /* Slightly darker */
+  --ifm-color-primary-darker: #6112a5; /* Darker */
+  --ifm-color-primary-darkest: #561093; /* Darkest */
+  --ifm-color-primary-light: #8a3ad3; /* Slightly lighter */
+  --ifm-color-primary-lighter: #9b5add; /* Lighter */
+  --ifm-color-primary-lightest: #ad7fe6;
+  --ifm-color-primary-li: #f1f1ff;
+  --ifm-color-primary-lit: #fefefe;
+  --ifm-color-primary-lite: #fefefe;
+  --ifm-color-primary-grey: #7c7c7c;
+  --ifm-color-primary-greye: #8358a9;
+  --ifm-color-primary-black: #1a1a1a;
+  --ifm-color-param-lila: #c9bce78a;
+  --ifm-color-param-hone: #171c1f;
+  /* #1a1a1a
+ #c7c7c7 */
+  /* Lightest */
+  --ifm-code-font-size: 95%;
+
+  --docusaurus-highlighted-code-line-bg: rgba(
+    120,
+    25,
+    203,
+    0.1
+  ); /* Use purple as a background */
+}
+
+/* Adjusted palette for dark mode */
+[data-theme="dark"] {
+  --ifm-color-primary: #7c3cb5; /* Main purple color */
+  --ifm-color-primary-dark: #7228b4; /* Slightly darker */
+  --ifm-color-primary-darker: #6112a5; /* Darker */
+  --ifm-color-primary-darkest: #a53fff; /* Darkest */
+  --ifm-color-primary-light: #8a3ad3;
+  /* --ifm-color-primary-darkest: #42067a;
+  --ifm-color-primary-light: #7b3fd6;  */
+  --ifm-color-primary-lighter: #8c4cf4;
+  --ifm-color-primary-lightest: #9b6eff; /* Lighter still */
+  --ifm-color-primary-li: #080825;
+  --ifm-color-primary-lit: #c7c6ce; /* Lightest background with dark mode effect */
+  --ifm-color-primary-grey: #e3daea;
+  --ifm-color-primary-greye: #7468b3;
+  --ifm-color-primary-black: #c7c7c7;
+  --ifm-color-param-lila: #9a7ed13b;
+  --ifm-color-param-hone: #b5b5b5;
+  --ifm-code-font-size: 95%; /* Same font size */
+
+  --docusaurus-highlighted-code-line-bg: rgba(159, 96, 214, 0.2);
+  --ifm-color-primary-lite: rgb(22, 22, 35); /* Highlighted line background */
+}
+.steps {
+  box-shadow: 0px 15px 30px -10px var(--ifm-color-param-lila);
+  border-radius: 20px;
+  padding: 10px;
+
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* .steps:hover {
+  background-color: white; /* Lightest primary color
+  box-shadow: 0 6px 10px rgba(120, 25, 203, 0.3); 
+  transform: translateY(-4px);  */
+.cc {
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.cc:hover {
+  /* border: 1px solid #5f097084; */
+  background-color: var(--ifm-color-primary-li); /* Lightest primary color */
+  box-shadow: 0px 15px 30px -10px var(--ifm-color-param-lila);
+}
+.parag {
+  color: #918c95 !important;
+  font-size: 1.2rem !important;
+}
+.button--secondary {
+  background-color: var(--ifm-color-primary-lit) !important;
+}
+
+.containere {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+  /* width: 200px; */
+}
+
+.linke {
+  display: flex;
+
+  align-items: center;
+  text-decoration: none;
+  /* background-color: #f1f1ff; */
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  /* border: 1px solid #b374ca; */
+}
+
+.linke:hover {
+  /* background-color: var(--ifm-color-param-lila); */
+  background-color: var(--ifm-color-primary-li);
+  box-shadow: 0px 15px 30px -10px var(--ifm-color-param-lila);
+}
+
+.icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--ifm-color-primary);
+  border-radius: 4px;
+  font-weight: bold;
+  color: var(--ifm-color-primary-lit);
+  font-family: monospace;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 100px;
+}
+
+.texte {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ifm-color-primary-black);
+}
+
+.arrowe {
+  font-size: 16px;
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+  margin-left: auto;
+}
+
+/* .navbar__brand {
+  gap: 70px;
+} */
+.heroImage {
+  width: 100px !important;
+  height: auto;
+  margin-bottom: 1rem; /* Optional spacing */
+}
+.footer__logo {
+  max-width: 150px; /* Adjust the size */
+  margin: 0 auto; /* Center the image */
+}
+.header {
+  background-color: var(--ifm-color-primary-li) !important;
+}
+.col .col--4 {
+  background-color: var(--ifm-color-primary-li) !important;
+
+  border-radius: 20px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-primary) !important;
+}
+
+h1 {
+  color: var(--ifm-color-primary) !important;
+}
+p {
+  color: var(--ifm-color-primary-grey) !important;
+}
+.parag {
+  color: var(--ifm-color-primary-grey) !important;
+  font-size: 1rem !important;
+}
+a:link {
+  text-decoration: none;
+}
+.menu__link {
+  padding: 10px;
+  font-size: 18px;
+}
+.menu__link--active {
+  color: #7c3cb5; /* Active link color */
+  border-left: 5px solid #7c3cb5; /* Side border */
+}
+
+.table-of-contents__link--active {
+  color: #7c3cb5;
+  padding-left: 13px;
+  border-left: 2px solid #7c3cb5;
+  border-radius: 1px;
+  font-weight: 500;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  /* Dark background color */
+}
+
+.card {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  background-color: var(--ifm-color-primary-li); /* Card background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--ifm-color-param-lila);
+  text-align: start;
+  color: var(--ifm-color-primary-black); /* Text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px var(--ifm-color-param-lila); /* Enhanced shadow on hover */
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: var(--ifm-color-primary-black); /* Default text color */
+  transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+  color: var(--ifm-color-primary); /* Change text color on card hover */
+}
+
+.card p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: var(--ifm-color-primary-black); /* Default text color */
+}
+
+h3 {
+  color: var(--ifm-color-primary-greye); /* Default text color */
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 24px;
+  color: var(--ifm-color-param-hone);
+}
+
+.token.comment {
+  color: #6a9955; /* Example: green color for comments */
+}
+/* src/css/custom.css */
+
+/* Customize Bash code block colors */
+.codeBlock.language-bash {
+  background-color: #2d2d2d; /* Dark background */
+  color: #d4d4d4; /* Light gray text */
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.codeBlock.language-bash .token.comment {
+  color: #6a9955; /* Green color for comments */
+}
+
+.codeBlock.language-bash .token.keyword {
+  color: #c586c0; /* Purple color for keywords */
+}
+
+.codeBlock.language-bash .token.string {
+  color: #ce9178; /* Light brown for strings */
+}
+
+.codeBlock.language-bash .token.function {
+  color: #9cdcfe; /* Light blue for functions */
+}
+.mermaid {
+  text-align: center;
+  color: #080825;
+  margin: 20px 0;
+}
+.edgeLabelBackground {
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #23176c;
+}
+.nodeLabel p {
+  color: #0a0a67 !important;
+}
+.flowchart-link {
+  color: #4a4a90 !important;
+}
